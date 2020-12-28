@@ -1,0 +1,136 @@
+body {
+  background: linear-gradient(90deg, #f7f5f1, #f7f5ff);
+  background-color: #f7f5f6;
+  color: #333;
+  font-size: 10px;
+  font-family: Raleway, "Open Sans Condensed", sans-serif;
+}
+
+figure,
+.figure {
+  margin-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  text-align: center;
+}
+
+figure > a > img,
+.figure > a > img {
+  margin-bottom: 10px;
+}
+
+figcaption,
+.figcaption {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+/* BOTÃO CARREGAR MAIS */
+.wrap-button {
+  width: 250px;
+  overflow: hidden;
+  margin: 50px auto auto auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-load {
+  padding: 20px;
+  max-width: 100px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+  flex: 1;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.wrap .box-hidden {
+  display: none;
+}
+/* FIM BOTÃO CARREGAR MAIS */
+
+@media (min-width: 576px) {
+  figure,
+  .figure {
+    display: inline-block;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+/* FIM EFEITO ONDA RODAPÉ */
+
+@media (min-width: 992px) {
+  figure:hover,
+  .figure:hover {
+    background: linear-gradient(90deg, #ccc, #fff, #ccc);
+  }
+
+  /* EFEITO NAS IMAGENS PORTFOLIO */
+  img {
+    transition: all 0.3s ease-out;
+    filter: grayscale(100%);
+  }
+
+  img:hover {
+    transform: scale(1.3) rotate(10deg);
+    filter: grayscale(0);
+    transition: all 0.5s ease-out;
+  }
+
+  .eImg {
+    width: 250px;
+    margin: auto;
+    overflow: hidden;
+  }
+  /* FIM EFEITO NAS IMAGENS PORTFOLIO */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .info {
+    margin-top: 10px;
+    visibility: visible;
+  }
+
+  /* BOTÃO CARREGAR MAIS 992px */
+  .btn-load {
+    max-width: 250px;
+    font-size: 2em;
+    transition: all 0.3s ease-out;
+  }
+
+  .btn-load:hover {
+    background-color: #888;
+    letter-spacing: 5px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+  }
+  /* BOTÃO CARREGAR MAIS 992px */
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
